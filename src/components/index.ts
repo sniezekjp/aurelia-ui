@@ -2,9 +2,22 @@
 import {FrameworkConfiguration} from 'aurelia-framework';
 
 export function configure(config: FrameworkConfiguration) {
-     config.globalResources('./accordion/accordion');
-     config.globalResources('./modal/modal');
-     config.globalResources('./tabs/tabs');
-     config.globalResources('./login/login');
-     config.globalResources('./dropdown/dropdown');
+     [
+         'accordion',
+         'calendar',
+         'directions',
+         'dropdown',
+         'login',
+         'modal',
+         'navigation',
+         'navigation-bar',
+         'newsletter',
+         'post',
+         'signin',
+         'tabs',
+         'user-details',
+         'weather'
+     ].forEach(function(component) {
+          config.globalResources('./${component}/${component}');
+     });
 }
