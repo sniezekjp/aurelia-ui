@@ -29,17 +29,5 @@ export class Root {
     constructor(element) {
         this.element = element;
     }
-
-    activate() {
-        console.log('activate');
-        console.log(this.element);
-        this.element.classList.add('root');
-    }
-
-    deactivate() {
-        console.log('deactivate');
-        this.element.classList.remove('root');
-        console.log(this.element);
-    }
 }
 
