@@ -1,14 +1,12 @@
 <template>
     <div class="tabs">
         <a href="" click.trigger="$parent.manager.open(item)" repeat.for="item of manager.toggles"
-           class="${item.isOpen ? 'open': ''}">
-            Item ${item.data.title}
+           class="tab ${item.isOpen ? 'open': ''}">
+            ${item.data.title}
         </a>
-        <div repeat.for="item of manager.toggles">
-            <div show.bind="item.isOpen">
-                ${item.data.title}
-                <compose if.bind="item.data.viewModel" view-model="${item.data.viewModel}"></compose>
-            </div>
+        <div repeat.for="item of manager.toggles" class="tab-content" show.bind="item.isOpen">
+            ${item.data.title}
+            <compose if.bind="item.data.viewModel" view-model="${item.data.viewModel}"></compose>
         </div>
     </div>
 </template>

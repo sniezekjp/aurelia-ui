@@ -1,15 +1,11 @@
 <template>
-    <div>
-        <a href="" click.trigger="manager.openAll()">Open all</a>
-        <a href="" click.trigger="manager.closeAll()">Close All</a>
-        <div repeat.for="item of manager.toggles">
-            <div>
-                <h3><a href="" click.trigger="$parent.manager.toggle(item)">Item ${item.data.title}</a></h3>
-                <div show.bind="item.isOpen">
-                    ${item.data.title} <br/>
-                    <compose if.bind="item.data.viewModel" view-model="${item.data.viewModel}"></compose>
-                </div>
-            </div>
+    <div repeat.for="item of manager.toggles" class="accordion">
+        <a href="" click.trigger="$parent.manager.toggle(item)">
+            <span>${item.isOpen ? '-' : '+'}</span>Item ${item.data.title}
+        </a>
+        <div show.bind="item.isOpen" class="accordion-content">
+            ${item.data.title}
+            <compose if.bind="item.data.viewModel" view-model="${item.data.viewModel}"></compose>
         </div>
     </div>
 </template>

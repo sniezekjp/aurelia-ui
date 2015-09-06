@@ -5,5 +5,6 @@ export function configure(config: FrameworkConfiguration) {
      config.globalResources('./accordion/accordion');
      config.globalResources('./modal/modal');
      config.globalResources('./tabs/tabs');
-     config.globalResources('./tester/tester');
+     config.globalResources('./login/login');
+     config.globalResources('./dropdown/dropdown');
 }

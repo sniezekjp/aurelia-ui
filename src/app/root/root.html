@@ -1,8 +1,10 @@
 <template>
     <div class="root">
+        <a href="#/login">login</a>
         <modal data.bind="modal" modal.ref="modalVM"></modal>
         <a href="" click.trigger="modalVM.toggle.toggle()">Toggle tester Modal</a>
         <accordion items.bind="items"></accordion>
-        <tabs items.bind="items"></tabs>
+        <tabs items.bind="tabs"></tabs>
+        <dropdown items.bind="dropdown" name="dropdown"></dropdown>
     </div>
 </template>

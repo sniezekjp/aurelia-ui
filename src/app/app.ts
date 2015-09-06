@@ -7,9 +7,9 @@ export class App {
     configureRouter(config, router) {
         this.router = router;
         var rootPrefix = 'root';
-        config.title = 'App';
         config.map([
-            {route: rootPrefix, name: 'root', moduleId: 'app/root/root'},
+            {route: rootPrefix, name: 'root', moduleId: './root/root', title: 'HII'},
+            {route: 'login', name: 'login', moduleId: './login/login'},
             {route: [''], redirect: rootPrefix}
         ]);
 
