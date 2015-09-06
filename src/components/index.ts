@@ -5,6 +5,8 @@ export function configure(config: FrameworkConfiguration) {
      [
          'accordion',
          'calendar',
+         'date',
+         'date-range',
          'directions',
          'dropdown',
          'login',
@@ -18,6 +20,6 @@ export function configure(config: FrameworkConfiguration) {
          'user-details',
          'weather'
      ].forEach(function(component) {
-          config.globalResources('./${component}/${component}');
+          config.globalResources(`./${component}/${component}`);
      });
 }

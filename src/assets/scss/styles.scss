@@ -1,8 +1,8 @@
 // globals
 @import '../../vendor/github/necolas/normalize.css@3.0.3/normalize.css';
-@import './variables.scss';
-@import './fonts.scss';
-@import './animations.scss';
+@import './globals/variables.scss';
+@import './globals/fonts.scss';
+@import './globals/animations.scss';
 
 // components
 @import '../../components/accordion/accordion.scss';
