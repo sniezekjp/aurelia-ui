@@ -1,0 +1,8 @@
+<template>
+    <div class="root">
+        <modal data.bind="modal" modal.ref="modalVM"></modal>
+        <a href="" click.trigger="modalVM.toggle.toggle()">Toggle tester Modal</a>
+        <accordion items.bind="items"></accordion>
+        <tabs items.bind="items"></tabs>
+    </div>
+</template>

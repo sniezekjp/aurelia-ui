@@ -1,0 +1,21 @@
+// globals
+@import '../../vendor/github/necolas/normalize.css@3.0.3/normalize.css';
+@import './variables.scss';
+@import './fonts.scss';
+@import './animations.scss';
+
+// components
+@import '../../components/modal/modal.scss';
+@import '../../components/tabs/tabs.scss';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.root {
+  padding: 40px;
+}

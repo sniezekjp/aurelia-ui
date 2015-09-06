@@ -1,0 +1,9 @@
+<template>
+    <div class="modal-wrapper ${toggle.isOpen ? 'open': ''}">
+        <div class="modal-bg" click.trigger="toggle.close()"></div>
+        <div class="modal">
+            <a href="" click.trigger="toggle.close()">close</a>
+            <compose view-model="${toggle.data.viewModel}"></compose>
+        </div>
+    </div>
+</template>
