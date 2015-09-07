@@ -6,15 +6,14 @@ export class App {
 
     configureRouter(config, router) {
         this.router = router;
-        var rootPrefix = 'root';
         config.map([
-            {route: rootPrefix, name: 'root', moduleId: './root/root', title: 'HII'},
+            {route: 'root', name: 'root', moduleId: './root/root', title: 'HII'},
             {route: 'login', name: 'login', moduleId: './login/login'},
-            {route: [''], redirect: rootPrefix}
+            {route: [''], redirect: 'login'}
         ]);
 
         config.mapUnknownRoutes(instruction => {
-            instruction.config.redirect = rootPrefix;
+            instruction.config.redirect = 'root';
         });
     }
 }
