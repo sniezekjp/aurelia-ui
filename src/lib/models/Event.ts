@@ -1,3 +1,6 @@
 import {BaseModel} from '../base/BaseModel';
 
-export class Event extends BaseModel {}
+export class Event extends BaseModel {
+    location;
+    date;
+}
