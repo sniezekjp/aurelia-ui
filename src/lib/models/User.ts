@@ -10,4 +10,5 @@ export class User extends BaseModel {
     resetPassword() { return this; }
     unsubscribe() { return this; }
     login() { return this; }
+    register() { return this; }
 }
