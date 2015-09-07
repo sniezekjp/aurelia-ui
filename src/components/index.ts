@@ -22,6 +22,7 @@ export function configure(config: FrameworkConfiguration) {
          'progress-bar',
          'signin',
          'tabs',
+         'timepicker',
          'tool-tip',
          'user-details',
          'weather'
