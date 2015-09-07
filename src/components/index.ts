@@ -4,6 +4,7 @@ import {FrameworkConfiguration} from 'aurelia-framework';
 export function configure(config: FrameworkConfiguration) {
      [
          'accordion',
+         'alert',
          'calendar',
          'carousel',
          'date',
