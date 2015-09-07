@@ -1,6 +1,9 @@
+/**
+ * BaseModel
+ */
 export class BaseModel {
 
-    static find(where, limit, offset){}
+    static find(where, limit, offset) {}
     static findOne(where) {}
     static findById(id) {}
 
