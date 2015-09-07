@@ -1,16 +1,17 @@
 var gulp = require('gulp');
-var tsc = require('gulp-tsc');
+var ts = require('gulp-typescript');
 var watch = require('gulp-watch');
-var newer = require('gulp-newer');
+var changed = require('gulp-changed');
 var sass = require('gulp-sass');
 var notify = require('gulp-notify');
 var reload = require('gulp-livereload');
+var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 
 // copy task
 gulp.task('copy', function() {
-    gulp.src(['src/**/*'], {base: './src'})
-        .pipe(newer('dist'))
+    return gulp.src(['src/**/*'], {base: './src'})
+        .pipe(changed('dist'))
         .pipe(gulp.dest('dist'));
 });
 
@@ -18,17 +19,18 @@ var tsFiles = [
   'dist/**/*.ts',
   '!dist/vendor/**'
 ];
-gulp.task('ts', function() {
-    gulp.src(tsFiles)
-        .pipe(tsc({
+gulp.task('ts', ['copy'], function() {
+    var tsResult = gulp.src(tsFiles)
+        .pipe(sourcemaps.init())
+        .pipe(ts({
             emitError: false,
             module: 'commonjs',
             target:'ES5',
-            sourceMap: true,
-            mapRoot: '../',
-            sourceRoot: '',
+            sortOutput: true,
             experimentalDecorators: true
-        }))
+        }));
+    return tsResult.js
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist'))
         .pipe(browserSync.stream());
 });
@@ -37,9 +39,9 @@ gulp.task('serve', ['ts', 'styles'], function() {
     browserSync.init({
         server: {
             baseDir: "./dist"
-        }
+        },
+        logLevel: 'silent'
     });
-
     gulp.watch(['dist/**/*.html', 'dist/**/*.css']).on('change', browserSync.reload);
 });
 
@@ -51,8 +53,8 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
     gulp.watch(['src/**/*.html'], ['copy']);
-    gulp.watch(['src/**/*.scss'], ['copy', 'styles']);
-    gulp.watch(['src/**/*.ts'], ['copy', 'ts']);
+    gulp.watch(['src/**/*.scss'], ['styles']);
+    gulp.watch(['src/**/*.ts'], ['ts']);
 });
 
 gulp.task('default', ['serve', 'watch']);
