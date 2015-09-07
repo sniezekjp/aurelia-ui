@@ -16,6 +16,7 @@ export function configure(config: FrameworkConfiguration) {
          'navigation',
          'navigation-bar',
          'newsletter',
+         'notification',
          'pagination',
          'popover',
          'post',
