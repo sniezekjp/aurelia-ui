@@ -2,3 +2,5 @@ dist
 node_modules
 src/vendor
 .idea
+gulp-*
+src/.gulp*

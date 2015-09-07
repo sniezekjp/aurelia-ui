@@ -4,6 +4,29 @@
 @import './globals/fonts.scss';
 @import './globals/animations.scss';
 
+// routes
+@import '../../app/forgot-password/forget-password.scss';
+@import '../../app/lock-screen/lock-screen';
+@import '../../app/login/login';
+@import '../../app/register/register';
+@import '../../app/root/root';
+@import '../../app/unsubscribe/unsubscribe';
+@import '../../app/view-email/view-email';
+
+// root routes
+@import '../../app/root/contact/contact';
+@import '../../app/root/dashboard/dashboard';
+@import '../../app/root/faq/faq';
+@import '../../app/root/forms/forms';
+@import '../../app/root/gallery/gallery';
+@import '../../app/root/maps/maps';
+@import '../../app/root/pages/pages';
+@import '../../app/root/profile/profile';
+@import '../../app/root/search/search';
+@import '../../app/root/tables/tables';
+@import '../../app/root/ui-elements/ui-elements';
+@import '../../app/root/widgets/widgets';
+
 // components
 @import '../../components/accordion/accordion.scss';
 @import '../../components/modal/modal.scss';
