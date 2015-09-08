@@ -12,7 +12,7 @@ export class Root {
     tabs = [
         {viewModel:'app/login/login', title: 'Tab 1'},
         {viewModel: '../login/login', title: 'Tab 2'},
-        {viewModel: '../login/login', title: 'Tab 33'}
+        {viewModel: '../login/login', title: 'Tab 3'}
     ];
 
     modal = {
