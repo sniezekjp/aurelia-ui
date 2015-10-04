@@ -8,7 +8,8 @@ export class Root {
         this.router = router;
         config.map([
             {route: 'dashboard', name: 'dashboard', moduleId: './dashboard/dashboard', title: 'Dashboard'},
-            {route: 'settings', name: 'settings', moduleId: './settings/settings', title: 'Settings'}
+            {route: 'settings', name: 'settings', moduleId: './settings/settings', title: 'Settings'},
+            {route: 'profile', name: 'profile', moduleId: './profile/profile', title: 'Profile'}
         ]);
 
         config.mapUnknownRoutes(instruction => {

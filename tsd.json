@@ -15,7 +15,7 @@
       "commit": "3b0f362204ea965952dafdb682a5274d527ef9d0"
     },
     "jquery/jquery.d.ts": {
-      "commit": "3b0f362204ea965952dafdb682a5274d527ef9d0"
+      "commit": "98d3168c2c570352a3a7393788e2ec9fbb08ade6"
     },
     "systemjs/systemjs.d.ts": {
       "commit": "3b0f362204ea965952dafdb682a5274d527ef9d0"
@@ -25,6 +25,9 @@
     },
     "core-js/core-js.d.ts": {
       "commit": "efa0c1196d7280640e624ac1e7fa604502e7bd63"
+    },
+    "bootstrap/bootstrap.d.ts": {
+      "commit": "98d3168c2c570352a3a7393788e2ec9fbb08ade6"
     }
   }
 }

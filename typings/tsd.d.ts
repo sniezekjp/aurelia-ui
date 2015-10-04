@@ -22,4 +22,5 @@
 /// <reference path="aurelia/aurelia-templating-binding.d.ts" />
 /// <reference path="aurelia/aurelia-templating.d.ts" />
 /// <reference path="core-js/core-js.d.ts" />
-/// <reference path="aurelia/aurelia-framework.d.ts" />
+/// <reference path="bootstrap/bootstrap.d.ts" />
+/// <reference path="jquery/jquery.d.ts" />
