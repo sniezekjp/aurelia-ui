@@ -1,4 +1,7 @@
 /// <reference path="./app.d.ts" />
+import 'bootstrap';
+import 'bootstrap/css/bootstrap.css!';
+
 import {LogManager} from 'aurelia-framework';
 import {ConsoleAppender} from 'aurelia-logging-console';
 

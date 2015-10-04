@@ -12,11 +12,14 @@
       "aurelia-framework": "github:aurelia/framework@^0.15.0",
       "aurelia-http-client": "github:aurelia/http-client@^0.10.3",
       "aurelia-router": "github:aurelia/router@^0.11.0",
+      "bootstrap": "github:twbs/bootstrap@^3.3.5",
       "daneden/animate.css": "github:daneden/animate.css@^3.4.0",
       "es6-module-loader": "npm:es6-module-loader@^0.17.6",
       "github/fetch": "github:github/fetch@^0.9.0",
       "jquery": "github:components/jquery@^2.1.4",
-      "necolas/normalize.css": "github:necolas/normalize.css@^3.0.3"
+      "necolas/normalize.css": "github:necolas/normalize.css@^3.0.3",
+      "systemjs/plugin-css": "github:systemjs/plugin-css@^0.1.18",
+      "thomaspark/bootswatch": "github:thomaspark/bootswatch@^3.3.5"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.4.3",

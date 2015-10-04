@@ -15,12 +15,15 @@ System.config({
     "aurelia-router": "github:aurelia/router@0.11.0",
     "babel": "npm:babel-core@5.8.23",
     "babel-runtime": "npm:babel-runtime@5.8.20",
+    "bootstrap": "github:twbs/bootstrap@3.3.5",
     "core-js": "npm:core-js@0.9.18",
     "daneden/animate.css": "github:daneden/animate.css@3.4.0",
     "es6-module-loader": "npm:es6-module-loader@0.17.7",
     "github/fetch": "github:github/fetch@0.9.0",
     "jquery": "github:components/jquery@2.1.4",
     "necolas/normalize.css": "github:necolas/normalize.css@3.0.3",
+    "css": "github:systemjs/plugin-css@0.1.18",
+    "thomaspark/bootswatch": "github:thomaspark/bootswatch@3.3.5",
     "traceur": "github:jmcriffey/bower-traceur@0.0.89",
     "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.89",
     "typescript": "github:mhegazy/typescript@v1.5-beta2",
@@ -146,6 +149,9 @@ System.config({
     },
     "github:necolas/normalize.css@3.0.3": {
       "css": "github:systemjs/plugin-css@0.1.16"
+    },
+    "github:twbs/bootstrap@3.3.5": {
+      "jquery": "github:components/jquery@2.1.4"
     },
     "npm:babel-runtime@5.8.20": {
       "process": "github:jspm/nodelibs-process@0.1.1"
