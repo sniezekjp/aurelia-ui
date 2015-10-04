@@ -7,6 +7,7 @@
 /// <reference path="aurelia/aurelia-binding.d.ts" />
 /// <reference path="aurelia/aurelia-dependency-injection.d.ts" />
 /// <reference path="aurelia/aurelia-event-aggregator.d.ts" />
+/// <reference path="aurelia/aurelia-framework.d.ts" />
 /// <reference path="aurelia/aurelia-history-browser.d.ts" />
 /// <reference path="aurelia/aurelia-history.d.ts" />
 /// <reference path="aurelia/aurelia-loader.d.ts" />

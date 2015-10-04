@@ -1,3 +1,4 @@
+/// <reference path="./app.d.ts" />
 import {LogManager} from 'aurelia-framework';
 import {ConsoleAppender} from 'aurelia-logging-console';
 

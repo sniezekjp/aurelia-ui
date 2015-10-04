@@ -72,8 +72,8 @@ interface Function {
 // #############################################################################################
 
 interface ArrayLike<T> {
-    length: number;
-    [n: number]: T;
+//    length: number;
+//    [n: number]: T;
 }
 
 interface Array<T> {

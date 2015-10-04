@@ -1,14 +1,12 @@
 System.config({
-  "defaultJSExtensions": true,
-  "transpiler": "traceur",
-  "paths": {
+  defaultJSExtensions: true,
+  transpiler: "traceur",
+  paths: {
     "github:*": "vendor/github/*",
     "npm:*": "vendor/npm/*"
-  }
-});
+  },
 
-System.config({
-  "map": {
+  map: {
     "aurelia-animator-css": "github:aurelia/animator-css@0.15.0",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.16.0",
     "aurelia-fetch-client": "github:aurelia/fetch-client@0.1.2",
@@ -176,4 +174,3 @@ System.config({
     }
   }
 });
-

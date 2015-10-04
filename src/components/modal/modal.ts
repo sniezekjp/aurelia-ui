@@ -1,6 +1,6 @@
 import {customElement, bindable, inject} from 'aurelia-framework';
 import {CssAnimator} from 'aurelia-animator-css';
-import {Toggle, ToggleManager} from 'lib/ui/toggle';
+import {Toggle, ToggleManager} from '../../lib/ui/toggle';
 
 @customElement('modal')
 @inject(Element, CssAnimator)

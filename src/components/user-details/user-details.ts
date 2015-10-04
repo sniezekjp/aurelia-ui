@@ -1,1 +1,4 @@
-export class UserDetails {}
+export class UserDetails {
+    name;
+    age;
+}
