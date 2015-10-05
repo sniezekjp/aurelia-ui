@@ -1,17 +1,21 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="jumbotron">
-        <h1>Jumbotron</h1>
-        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <p><a class="btn btn-primary btn-lg" click.trigger="openLoginModal($event)" href="">Login</a></p>
+  <div class="container au-animate">
 
-        <a href="" click.trigger="openSettingsModal($event)">open settings modal</a> <br/>
-        <a href="" click.trigger="openProfileModal($event)">open profile modal</a>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h1>Jumbotron</h1>
+          <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <p><a class="btn btn-primary btn-lg" click.trigger="openLoginModal($event)" href="">Login</a></p>
+
+          <a href="" click.trigger="openSettingsModal($event)">open settings modal</a> <br/>
+          <a href="" click.trigger="openProfileModal($event)">open profile modal</a> <br/>
+          <a href="" click.trigger="dispatch()">dispatch</a>
+        </div>
       </div>
     </div>
-    <div class="row">
 
+    <div class="row">
       <div class="col-md-4">
         <div class="panel panel-default">
           <div class="panel-body">
