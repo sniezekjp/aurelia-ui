@@ -1,5 +1,5 @@
 /// <reference path="../../typings/tsd.d.ts"/>
-import 'thomaspark/bootswatch/superhero/bootstrap.css!';
+import 'thomaspark/bootswatch/yeti/bootstrap.css!';
 import {Redirect} from 'aurelia-router';
 
 export class App {

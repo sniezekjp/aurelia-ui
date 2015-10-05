@@ -4,10 +4,48 @@
       <div class="jumbotron">
         <h1>Jumbotron</h1>
         <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <p><a class="btn btn-primary btn-lg" route-href="route: settings;">Settings</a></p>
+        <p><a class="btn btn-primary btn-lg" click.trigger="openLoginModal($event)" href="">Login</a></p>
+
+        <a href="" click.trigger="openSettingsModal($event)">open settings modal</a> <br/>
+        <a href="" click.trigger="openProfileModal($event)">open profile modal</a>
       </div>
     </div>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            Basic panel example
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">Panel heading</div>
+          <div class="panel-body">
+            Panel content
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="badge">14</span>
+            <a href="">Cras justo odio</a>
+          </li>
+          <li class="list-group-item">
+            <span class="badge">2</span>
+            <a href="">Cras justo odio</a>
+          </li>
+          <li class="list-group-item">
+            <span class="badge">1</span>
+            <a href="">Cras justo odio</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
   </div>
-  <a href="" click.trigger="openSettingsModal($event)">open settings modal</a> <br/>
-  <a href="" click.trigger="openProfileModal($event)">open profile modal</a>
 </template>

@@ -1,6 +1,15 @@
-import {inject, customElement} from 'aurelia-framework';
+import {inject, customElement, Container} from 'aurelia-framework';
 import {EventAggregator} from 'aurelia-event-aggregator';
 import $ = require('jquery');
+
+export function openModal(viewModel, title, vm, eventAggregator) {
+    var modalEvent = new ModalEvent();
+    modalEvent.type = 'open';
+    modalEvent.viewModel = viewModel;
+    modalEvent.title = title;
+    modalEvent.vm = vm;
+    eventAggregator.publish(modalEvent);
+}
 
 export class ModalEvent {
     type = 'toggle';

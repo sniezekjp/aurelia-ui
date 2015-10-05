@@ -1,7 +1,7 @@
 import {Router} from 'aurelia-router';
 import {inject} from 'aurelia-framework';
 import {EventAggregator} from 'aurelia-event-aggregator';
-import {ModalEvent} from '../../../components/modal/modal';
+import {openModal} from '../../../components/modal/modal';
 import $ = require('jquery');
 
 @inject(Router, Element, EventAggregator)
@@ -18,21 +18,16 @@ export class Dashboard {
 
     openSettingsModal(e) {
         e.preventDefault();
-        var modalEvent = new ModalEvent();
-        modalEvent.type = 'open';
-        modalEvent.viewModel = this;
-        modalEvent.title = "Settings";
-        modalEvent.vm = 'app/root/settings/settings';
-        this.eventAggregator.publish(modalEvent);
+        openModal(this, 'Settings', 'app/root/settings/settings', this.eventAggregator);
     }
 
     openProfileModal(e) {
         e.preventDefault();
-        var modalEvent = new ModalEvent();
-        modalEvent.type = 'open';
-        modalEvent.viewModel = this;
-        modalEvent.title = "Profile";
-        modalEvent.vm = 'app/root/profile/profile';
-        this.eventAggregator.publish(modalEvent);
+        openModal(this, 'Profile', 'app/root/profile/profile', this.eventAggregator);
+    }
+
+    openLoginModal(e) {
+        e.preventDefault();
+        openModal(this, 'Login', 'app/login/login', this.eventAggregator);
     }
 }

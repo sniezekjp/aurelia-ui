@@ -2,5 +2,10 @@
 import {FrameworkConfiguration} from 'aurelia-framework';
 
 export function configure(config: FrameworkConfiguration) {
-    config.globalResources('./logger/logger');
+    [
+        'logger',
+        'tooltip'
+    ].forEach(function(attribute) {
+            config.globalResources(`./${attribute}/${attribute}`);
+        });
 }
