@@ -2,9 +2,6 @@
 import 'thomaspark/bootswatch/superhero/bootstrap.css!';
 import {Redirect} from 'aurelia-router';
 import $ = require('jquery');
-import {User} from '../lib/user/user';
-
-console.log(User);
 
 export class App {
     public router;
