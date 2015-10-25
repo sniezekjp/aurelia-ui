@@ -18,7 +18,12 @@ module.exports = function(config) {
     ],
 
     jspm: {
-      loadFiles: ['**/*.spec.js'],
+      loadFiles: [
+        {pattern: 'app/**/*.spec.js', watched: true},
+        {pattern:'components/**/*.spec.js', watched: true},
+        {pattern: 'lib/**/*.spec.js', watched: true},
+        {pattern: 'converters/**/*.spec.js',watched: true}
+      ],
       serveFiles: ['**/*.js'],
       config: 'config.js',
       packages: 'vendor'

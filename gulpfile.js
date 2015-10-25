@@ -10,7 +10,21 @@ var browserSync = require('browser-sync').create();
 
 // copy task
 gulp.task('copy', function() {
-    return gulp.src(['src/**/*'], {base: './src'})
+    return gulp.src([
+        'src/*',
+        'src/app/**/*',
+        'src/assets/**/*',
+        'src/attributes/**/*',
+        'src/components/**/*',
+        'src/config/**/*',
+        'src/converters/**/*',
+        'src/lib/**/*'], {base: './src'})
+        .pipe(changed('dist'))
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task('vendor', function() {
+    return gulp.src(['src/vendor/**/*'], {base: './src'})
         .pipe(changed('dist'))
         .pipe(gulp.dest('dist'));
 });
@@ -57,4 +71,4 @@ gulp.task('watch', function() {
     gulp.watch(['src/**/*.ts'], ['ts']);
 });
 
-gulp.task('default', ['serve', 'watch']);
+gulp.task('default', ['vendor','serve', 'watch']);
